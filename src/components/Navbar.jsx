@@ -5,21 +5,28 @@ import {
     BreadcrumbItem,
     BreadcrumbLink
   } from "@chakra-ui/react"
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
         <Breadcrumb separator="" >
             <BreadcrumbItem >
-                <BreadcrumbLink href="#">Home</BreadcrumbLink>
+                <BreadcrumbLink ><Link to="/">Home</Link></BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-                <BreadcrumbLink href="#">About</BreadcrumbLink>
+                <BreadcrumbLink ><Link to="/pets">Pets</Link></BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink href="#">Contact</BreadcrumbLink>
+                <BreadcrumbLink ><Link to="/new">Agregar</Link></BreadcrumbLink>
             </BreadcrumbItem>
+
+            <BreadcrumbItem isCurrentPage>
+                <BreadcrumbLink ><Link to="/login">Login</Link></BreadcrumbLink>
+            </BreadcrumbItem>
+
+           
         </Breadcrumb>
     )
 }
