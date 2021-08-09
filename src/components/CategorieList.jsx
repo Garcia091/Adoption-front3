@@ -11,7 +11,7 @@ const CategorieList = ({ tipo }) => {
   }, [tipo])
 
   const mascotaInfo = async (categoria) => {
-    const url = `http://localhost:3004/${categoria}`
+    const url = `https://app-api-geek.herokuapp.com/${categoria}`
     const resp = await fetch(url)
     const data = await resp.json()
     return data

@@ -15,7 +15,7 @@ const CategorieItem = memo(() => {
   const [tipo, setTipo] = useState([])
 
   const categoriesInfo = async () => {
-    const url = 'http://localhost:3004/categories'
+    const url = 'https://app-api-geek.herokuapp.com/categories'
     const resp = await fetch(url)
     const data = await resp.json()
     return data;
