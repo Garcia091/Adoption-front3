@@ -14,6 +14,7 @@ import Navbar from '../components/Navbar'
 import { PrivateRoute } from './PrivateRoute'
 import { PublicRoute } from './PublicRoute'
 import { AuthRouter } from './AuthRouter'
+import { PetsRouter } from './PetsRouter'
 
 const AppRouter = () => {
     const [checking, setChecking] = useState(false)
@@ -50,9 +51,9 @@ const AppRouter = () => {
                     />
 
                     <PrivateRoute
-                        exact
-                        path="/new"
-                        component={AddPets}
+                    
+                        path="/"
+                        component={PetsRouter}
                         isAuthenticated={isLooggedIn}
                     />
 

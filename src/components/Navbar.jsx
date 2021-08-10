@@ -11,19 +11,19 @@ const Navbar = () => {
     return (
         <Breadcrumb separator="" >
             <BreadcrumbItem >
-                <BreadcrumbLink ><Link to="/">Home</Link></BreadcrumbLink>
+               <Link to="/">Home</Link>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-                <BreadcrumbLink ><Link to="/pets">Pets</Link></BreadcrumbLink>
+               <Link to="/pets">Pets</Link>
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink ><Link to="/new">Agregar</Link></BreadcrumbLink>
+               <Link to="/new">Agregar</Link>
             </BreadcrumbItem>
 
             <BreadcrumbItem isCurrentPage>
-                <BreadcrumbLink ><Link to="/login">Login</Link></BreadcrumbLink>
+               <Link to="/login">Login</Link>
             </BreadcrumbItem>
 
            
